@@ -7,7 +7,7 @@ body {
 /* HERO */
 .hero {
     height: 90vh;
-    background: url("https://images.unsplash.com/photo-1563729784474-d77dbb933a9e") no-repeat center/cover;
+    background: url("images/fons.jpg") no-repeat center/cover;
     display: flex;
     align-items: center;
     padding-left: 80px;
