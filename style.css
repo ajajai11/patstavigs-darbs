@@ -1,92 +1,99 @@
 body {
     margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(135deg, #ffe0ec, #fff5f8);
+    font-family: 'Poppins', sans-serif;
+    background: #fff5f8;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: url("https://source.unsplash.com/1600x900/?cake,pink") center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* GLASS efekts */
+.glass {
+    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.2);
+    padding: 50px;
+    border-radius: 20px;
     text-align: center;
-}
-
-header {
-    padding: 30px;
-    background: #ff66a3;
     color: white;
+    animation: fadeIn 1.5s ease;
 }
 
-.container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 25px;
-    padding: 40px;
+.glass h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+}
+
+.glass p {
+    font-size: 20px;
+}
+
+/* KARTIŅAS */
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 60px;
 }
 
 .card {
-    background: white;
-    border-radius: 15px;
+    width: 260px;
+    border-radius: 20px;
     overflow: hidden;
     text-decoration: none;
     color: black;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    transition: 0.3s;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transition: 0.4s;
+    background: white;
 }
 
 .card img {
     width: 100%;
-    height: 150px;
+    height: 180px;
     object-fit: cover;
 }
 
-.card h2 {
+.card-text {
     padding: 15px;
-}
-
-.card:hover {
-    transform: translateY(-10px) scale(1.03);
-}
-
-.special {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    background: gold;
-}
-
-.game {
-    display: grid;
-    grid-template-columns: repeat(4, 80px);
-    justify-content: center;
-    gap: 15px;
-    margin-top: 30px;
-}
-
-.game-btn {
-    height: 80px;
-    font-size: 30px;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    background: white;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
-}
-.content {
-    padding: 30px;
-}
-
-.content img {
-    width: 80%;
-    border-radius: 15px;
-}
-
-.hero.small {
-    height: 40vh;
-}
-
-.content {
-    padding: 40px;
+    font-size: 18px;
     text-align: center;
 }
 
-.content img {
-    width: 60%;
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+}
+
+/* RECEPTES */
+.recipe {
+    max-width: 800px;
+    margin: 50px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    animation: fadeIn 1s ease;
+}
+
+.recipe img {
+    width: 100%;
     border-radius: 15px;
-    margin-bottom: 20px;
+}
+
+.back {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #ff66a3;
+}
+
+/* ANIMĀCIJA */
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
 }
