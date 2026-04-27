@@ -7,7 +7,7 @@ body {
 /* HERO */
 .hero {
     height: 90vh;
-    background: url("fonss.jpg") no-repeat center/cover;
+    background: url("fons.jpg") no-repeat center/cover;
     display: flex;
     align-items: center;
     padding-left: 80px;
