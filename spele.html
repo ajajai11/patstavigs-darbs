@@ -2,18 +2,30 @@
 <html lang="lv">
 <head>
 <meta charset="UTF-8">
-<title>Spēle</title>
+<title>Kūku spēle</title>
 <link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-<header>
-    <h1>🎮 Atrodi pārus</h1>
-</header>
+<section class="hero small">
+    <div class="hero-text">
+        <h1>Kūku spēle 🎮</h1>
+        <p>Atrodi vienādus gabaliņus!</p>
+    </div>
+</section>
 
-<div id="game" class="game"></div>
+<div class="game-container">
 
-<a href="index.html">⬅ Atpakaļ</a>
+    <div id="game" class="game"></div>
+
+    <p id="status"></p>
+
+    <a href="index.html" class="back-btn">⬅ Atpakaļ</a>
+
+</div>
 
 <script src="script.js"></script>
 
